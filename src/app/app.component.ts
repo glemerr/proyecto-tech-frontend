@@ -1,5 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { HighchartsChartModule } from 'highcharts-angular';
+@NgModule({
+ imports:[
+    HighchartsChartModule,
+ ],
+})
+export class appModule{}
 
 @Component({
   selector: 'app-root',
@@ -11,3 +19,4 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'energiaRenovable';
 }
+
